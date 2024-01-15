@@ -1,0 +1,57 @@
+/* Paleta de colores
+rgb(220, 242, 241) titulos 
+rgb(127, 199, 217) texto
+rgb(54, 84, 134) fondo gral.
+rgb(15, 16, 53) fondo encabezado/pie
+ */
+
+.fondo {
+    background-color: rgb(54, 84, 134);
+}
+
+a {
+    text-decoration: none;
+    /* Quita la subrayado del enlace */
+    color: inherit;
+    /* Usa el color del texto del elemento padre */
+}
+
+.mitexto {
+    font-size: 1em;
+    color: rgb(127, 199, 217);
+}
+
+.header {
+    background-color: rgb(15, 16, 53);
+    color: rgb(220, 242, 241);
+    font-size: 2em;
+    margin: auto;
+    padding: 1em;
+    border: 0px;
+    /* display: flex;
+     */
+}
+
+.article {
+    margin: auto;
+    padding: 1em;
+    border: 2px solid rgb(127, 199, 217);
+    border-radius: 1.5em;
+    color: rgb(220, 242, 241);
+}
+
+.btnmenu {
+    border: 2px solid white;
+    color: rgb(54, 84, 134);
+
+
+}
+
+.btnmenu:hover {
+    color: rgb(220, 242, 241);
+    transition: color 1.5s cubic-bezier(.24, .97, .8, .16);
+}
+
+h1{
+    border: 1px solid white;
+}

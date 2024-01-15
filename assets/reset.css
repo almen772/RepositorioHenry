@@ -1,0 +1,42 @@
+/* CSS Reset */
+
+/* Box sizing border-box por defecto para todos los elementos */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Normalizar estilos para evitar inconsistencias entre navegadores */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+    padding: 0;
+}
+
+/* Asegurar que las imágenes sean responsivas */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Restablecer estilos de lista y quitar decoración de enlaces */
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Agregar estilos adicionales según tus necesidades */
