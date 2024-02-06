@@ -1,3 +1,7 @@
+/* NOTAS : La idea ahora es colocar cada articulo como si fuecen 3 cuadrados uno al lado del otro resaltar en tamaño y color cuando se selecciona.
+colocar los simbolos de redes sociales en el footer  
+dar formato a tienda y contacto*/
+
 /* Paleta de colores
 rgb(220, 242, 241) titulos 
 rgb(127, 199, 217) texto
@@ -5,53 +9,217 @@ rgb(54, 84, 134) fondo gral.
 rgb(15, 16, 53) fondo encabezado/pie
  */
 
-.fondo {
-    background-color: rgb(54, 84, 134);
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,300&display=swap');
 
-a {
-    text-decoration: none;
-    /* Quita la subrayado del enlace */
-    color: inherit;
-    /* Usa el color del texto del elemento padre */
-}
-
-.mitexto {
-    font-size: 1em;
-    color: rgb(127, 199, 217);
-}
-
+/* HEADER */
 .header {
     background-color: rgb(15, 16, 53);
     color: rgb(220, 242, 241);
     font-size: 2em;
     margin: auto;
-    padding: 1em;
+    padding: 0.5em;
     border: 0px;
-    /* display: flex;
-     */
+    display: flex;
+    flex-direction: column;
 }
 
-.article {
-    margin: auto;
-    padding: 1em;
-    border: 2px solid rgb(127, 199, 217);
-    border-radius: 1.5em;
-    color: rgb(220, 242, 241);
+header>div>div {
+    padding-bottom: 0.5em;
 }
 
 .btnmenu {
-    border: 2px solid white;
-    color: rgb(54, 84, 134);
-
-
+    color: rgb(136, 152, 182);
+    border-radius: 0.2em;
+    padding: 0.5rem 1.5rem;
+    justify-content: center;
+    text-shadow: 0.5rem 0.5rem 0.35rem;
 }
 
 .btnmenu:hover {
     color: rgb(220, 242, 241);
-    transition: color 1.5s cubic-bezier(.24, .97, .8, .16);
+    background-color: rgba(54, 83, 134, 0.699);
+    transition: color 2s ease;
 }
 
-h1{
-    border: 1px solid white;
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ---------------------------------------------------- */
+
+
+/* MAIN */
+
+.fondo {
+    background-color: rgb(54, 84, 134);
+}
+
+.mitexto {
+    font-size: 1.7rem;
+    color: rgb(127, 199, 217);
+    text-align: justify;
+}
+
+section {
+    padding: 1rem;
+    display: inline-flex;
+    justify-content: space-around;
+    height: 90vh;
+}
+
+#container_tittle {
+    padding: 1rem;
+    color: rgb(220, 242, 241);
+}
+
+.principal-card {
+    display: flex;
+    color: rgb(220, 242, 241);
+    padding: 0.5rem;
+    border: 5px solid rgb(127, 199, 217);
+    border-radius: 1.5em;
+    color: rgb(220, 242, 241);
+    flex-direction: column;
+    align-items: center;
+    width: 50vw;
+
+}
+
+.principal-card h2,
+.principal-card img {
+    padding-bottom: 0.5rem;
+}
+
+.container-cards {
+    display: flexbox;
+    margin-inline-start: 0.5rem;
+}
+
+.secondary-card:first-child {
+    margin-bottom: 0.5rem;
+}
+
+.secondary-card {
+    display: flex;
+    color: rgb(220, 242, 241);
+    padding: 0.5rem;
+    border: 5px solid rgb(127, 199, 217);
+    border-radius: 1.5em;
+    color: rgb(220, 242, 241);
+    flex-direction: column;
+    align-items: center;
+    width: 45vw;
+}
+
+/* ---------------------------------------------- */
+
+/* Footer */
+.container-footer {
+    background-color: rgb(15, 16, 53);
+    height: 10%;
+}
+
+.container-btn-community {
+    padding: 0.5rem 0rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.Btn-community {
+    height: 10%;
+    display: flex;
+    align-items: space-around;
+}
+
+#Firma {
+    display: flex;
+    justify-content: center;
+    font-family: 'Alegreya', serif;
+    font-size: 1rem;
+    color: rgb(127, 199, 217);
+}
+
+/* ------------------------------------------------- */
+
+/* Tienda */
+
+td>img {
+    height: 500px;
+}
+
+thead {
+    background-color: rgb(180, 180, 184);
+    font-size: 3rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+tbody {
+    background-color: rgb(227, 225, 217);
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif, ;
+}
+
+tbody>tr>td {
+    text-align: center;
+}
+
+td {
+    padding: 0.5rem;
+}
+
+/* --------------------------------------------------------- */
+
+/* Contacto */
+
+.container-form {
+    color: rgb(127, 199, 217);
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-evenly;
+    align-content: space-around; */
+    /* background-color: cadetblue; */
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+    margin: 0.5rem;
+}
+
+form {
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-top: 0.5rem;
+    margin-bottom: 0.2rem;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+}
+
+input[type="checkbox"] {
+    width: 35px;
+    height: 35px;
+}
+
+button {
+    background-color: #8f92be;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#cb-yes-no {
+    display: flex;
+    width: 30%;
+    justify-content: space-evenly;
 }
